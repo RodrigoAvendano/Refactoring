@@ -23,13 +23,13 @@ describe("Unit test FizzBuzzService Class", () => {
   test("Test Method : applyValidationInExplorer case 1", () => {
     const explorer1 = { name: "Explorer1", score: 1 };
     const myService = FizzBuzzService.applyValidationInExplorer(explorer1);
-    expect(myService.trick).toEqual(7);
+    expect(myService.trick).toEqual(1);
   });
 
   test("Test Method : applyValidationInExplorer case 2", () => {
     const explorer3 = { name: "Explorer3", score: 3 };
     const myService = FizzBuzzService.applyValidationInExplorer(explorer3);
-    expect(myService.trick).toEqual("FIZZ-ZZZ");
+    expect(myService.trick).toEqual("FIZZ");
   });
 
   test("Test Method : applyValidationInExplorer case 3", () => {
