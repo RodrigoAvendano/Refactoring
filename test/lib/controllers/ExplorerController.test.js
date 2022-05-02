@@ -25,4 +25,24 @@ describe("Unit test for ExplorerController Class", () => {
         const myTotal = Controller.getExplorersAmonutByMission("node");
         expect(myTotal).toBe(10);
     });
+
+    test("4. Testing getNumber method - first case", ()=>{
+        const number = Controller.getNumber(6);
+        expect(number).toBe("FIZZ");
+    });
+
+    test("5. Testing getNumber method - second case", ()=>{
+        const number = Controller.getNumber(10);
+        expect(number).toBe("BUZZ");
+    });
+
+    test("6. Testing getNumber method - third case", ()=>{
+        const number = Controller.getNumber(15);
+        expect(number).toBe("FIZZBUZZ");
+    });
+
+    test("7. Testing getNumber method - fourth case", ()=>{
+        const number = Controller.getNumber(7);
+        expect(number).toBe(7);
+    });
 });
