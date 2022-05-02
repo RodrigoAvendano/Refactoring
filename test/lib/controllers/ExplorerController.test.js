@@ -23,6 +23,6 @@ describe("Unit test for ExplorerController Class", () => {
 
     test("3. Testing getExplorersAmonutByMission method", ()=>{
         const myTotal = Controller.getExplorersAmonutByMission("node");
-        expect(myTotal).toBe(13);
+        expect(myTotal).toBe(10);
     });
 });
